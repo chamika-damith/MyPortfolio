@@ -1,3 +1,4 @@
+/* navigation bar */
 body{
     margin: 0;
     padding: 0;
@@ -41,5 +42,56 @@ span{
 }
 .menu-links:hover{
     color: #FD7E14;
+    transition: 0.3s ease-in-out;
+}
+
+
+/*Home page */
+
+.developer{
+    margin-left: 10vw;
+    font-size: 115px;
+    color: #0D0D0C;
+}
+.developer>h1{
+    margin: 40px 0 0 0;
+    letter-spacing: 19px;
+
+}
+.left-side{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-left: 10vw;
+}
+.left-side>h2{
+    font-size: 90px;
+    margin: 0;
+    color: #FFFFFF;
+}
+.left-side>h3{
+    font-size:30px;
+    color: #FFFFFF;
+    opacity: 45%;
+    font-weight: 350;
+    letter-spacing: 1px;
+    margin-bottom: 0;
+    margin-top: 28px;
+}
+.button{
+    margin-top:60px;
+    width: 150px;
+    height: 40px;
+    background-color: #424141;
+    border: none;
+    border-radius: 3px;
+    color: #ffffff;
+    font-size:15px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.button:hover{
+    color: #FD7E14;
+    background-color: #525151;
     transition: 0.3s ease-in-out;
 }
