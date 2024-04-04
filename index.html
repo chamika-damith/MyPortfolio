@@ -15,129 +15,89 @@
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
 </head>
 <body>
-<header>
-    <nav class="navbar">
-        <div class="logo">
-            <a href="#"><span>C</span>hamika</a>
-        </div>
-        <ul class="navbar-menu">
-            <li><a href="#" class="menu-links">Home</a></li>
-            <li><a href="#" class="menu-links">About</a></li>
-            <li><a href="#" class="menu-links">Skill</a></li>
-            <li><a href="#" class="menu-links">Project</a></li>
-            <li><a href="#" class="menu-links">Assignment</a></li>
-            <li><a href="#" class="menu-links">Service</a></li>
-            <li><a href="#" class="menu-links">Contact</a></li>
-        </ul>
+<header class="header">
+    <a href="#" class="logo"><span class="span">C</span>hamika</a>
+    <nav class="navbar" id="myLinks">
+        <a href="#Home" class="active" >Home</a>
+        <a href="#About" >About</a>
+        <a href="#Skills" >Skills</a>
+        <a href="#Assignment" >Assignment</a>
+        <a href="#Service" >Service</a>
+        <a href="#Projects" >Projects</a>
+        <a href="#Contact">Contact</a>
     </nav>
 </header>
 
 <main>
     <!----------- Home section ------------->
-    <section class="home-section">
-        <div class="developer">
-            <h1>DEVELOPER</h1>
-        </div>
-        <div class="left-side">
-            <h2>App & Software<br> Developer</h2>
-            <h3>Chamika damith</h3>
-            <div class="btn">
-                <button type="button" class="button">Download CV</button>
+    <section class="home" id="Home">
+        <div class="home-content">
+            <h1>App & Software<br>Developer</h1>
+            <h4>Chamika Damith</h4>
+
+            <div class="img">
+                <img src="/assest/photo_2023-09-22_18-32-32.png" class="responsive">
             </div>
+
+            <div class="home-sci">
+
+            </div>
+            <a href="" class="btn-box">Download CV</a>
         </div>
-        <div class="social-links">
-            <ul>
-                <li><a href="">Facebook</a></li>
-                <li><a href="">Linkedin</a></li>
-                <li><a href="">Github</a></li>
-            </ul>
-        </div>
-<!--        <div>-->
-<!--            <img width="300" src="/assest/photo_2023-09-22_18-32-32.png" title="myImage" alt="MyImage">-->
-<!--        </div>-->
-<!--        <hr>-->
     </section>
     <br>
 
-<!--    &lt;!&ndash;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45; About section -&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&ndash;&gt;-->
-<!--    <section id="About">-->
-<!--        <article>-->
-<!--            <h2>About me</h2>-->
-<!--            <h3>Welcome to Chamika, <br>Best Software Services</h3>-->
-<!--            <h5>Hello,I am Chamika Damith.Currently, I am doing<br> my higher study about Software Engineering.</h5>-->
-<!--            <p>A wonderful serenity has taken possession of my entire soul, like<br> these sweet mornings of spring which I enjoy with my whole<br> heart. I am alone, and feel the charm of existence in this spot,<br> which was created for the bliss of souls like mine. I am so happy,<br> my dear friend, so absorbed in the exquisite</p>-->
-<!--        </article>-->
-<!--        <div>-->
-<!--            <img width="300px" src="/assest/photo_2023-12-19_10-44-29.png" title="myImage2" alt="MyImage2"><br>-->
-<!--            <div>-->
-<!--                <h3>2+</h3>-->
-<!--                <span>Years Experience</span>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--        <section>-->
-<!--            <div>-->
-<!--                <h3>-->
-<!--                    <span><i>500</i></span>-->
-<!--                    +-->
-<!--                </h3>-->
-<!--                <p><i>Project Complete</i></p>-->
-<!--            </div>-->
-<!--            <div>-->
-<!--                <h3>-->
-<!--                    <span><i>10</i></span>-->
-<!--                    +-->
-<!--                </h3>-->
-<!--                <p><i>Awards Win</i></p>-->
-<!--            </div>-->
-<!--            <div>-->
-<!--                <h3>-->
-<!--                    <span><i>100</i></span>-->
-<!--                    +-->
-<!--                </h3>-->
-<!--                <p><i>Happy Clients</i></p>-->
-<!--            </div>-->
-<!--        </section>-->
-<!--        <hr>-->
-<!--    </section>-->
+    <!--About Section-->
+    <section class="about" id="About">
+        <div class="about-img">
+            <img src="/assest/photo_2023-09-22_18-32-32.png" title="myImage2" alt="MyImage2" class="abt-responsive"><br>
+        </div>
 
-<!--    &lt;!&ndash;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45; Skill section -&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&ndash;&gt;-->
-<!--    <section id="Skill">-->
+        <div class="about-text">
+            <span>About me</span>
+            <h1>Welcome to Chamika, <br>Best Software Services</h1>
+            <h5>Hello,I am Chamika Damith.Currently, I am doing<br> my higher study about Software Engineering.</h5>
+            <p class="about-heading">A wonderful serenity has taken possession of my entire soul, like<br> these sweet mornings of spring which I enjoy with my whole<br> heart. I am alone, and feel the charm of existence in this spot,<br> which was created for the bliss of souls like mine. I am so happy,<br> my dear friend, so absorbed in the exquisite</p>
+        </div>
+    </section>
 
-<!--        <h2>Skill</h2><br>-->
+    <section class="skills">
 
-<!--        <div>-->
-<!--            <table border="1">-->
-<!--                <tbody>-->
-<!--                <tr>-->
-<!--                    <td><img width="20px" src="assest/skillLogo/javascript.png" title="javascript" alt="javascript"><br>Javascript</td>-->
-<!--                    <td><img width="20px" src="assest/skillLogo/java.png" title="java" alt="java"><br>Java</td>-->
-<!--                    <td><img width="20px" src="assest/skillLogo/python.png" title="python" alt="python"><br>Python</td>-->
-<!--                    <td>C</td>-->
-<!--                    <td><img width="20px" src="assest/skillLogo/html.png" title="html" alt="html"><br>HTML</td>-->
-<!--                    <td><img width="20px" src="assest/skillLogo/css.png" title="css" alt="css"><br>CSS</td>-->
-<!--                </tr>-->
-<!--                <tr>-->
-<!--                    <td><img width="20px" src="assest/skillLogo/mysql.png" title="mysql" alt="mysql"><br>MySQL</td>-->
-<!--                    <td><img width="20px" src="assest/skillLogo/react.png" title="react" alt="react"><br>React</td>-->
-<!--                    <td>C#</td>-->
-<!--                    <td><img width="20px" src="assest/skillLogo/springboot.png" title="springboot" alt="springboot"><br>SpringBoot</td>-->
-<!--                    <td><img width="20px" src="assest/skillLogo/nodejs.png" title="nodejs" alt="nodejs"><br>NodeJS</td>-->
-<!--                    <td><img width="20px" src="assest/skillLogo/tailwind.png" title="tailwind" alt="tailwind"><br>TailWind</td>-->
-<!--                </tr>-->
-<!--                <tr>-->
-<!--                    <td><img width="20px" src="assest/skillLogo/typescript.png" title="typescript" alt="typescript"><br>TypeScript</td>-->
-<!--                    <td>MongoDB</td>-->
-<!--                    <td><img width="20px" src="assest/skillLogo/firebase.png" title="firebase" alt="firebase"><br>FireBase</td>-->
-<!--                    <td>NestJS</td>-->
-<!--                    <td><img width="20px" src="assest/skillLogo/materialui.png" title="meterialUI" alt="meterialUI"><br>meterialUI</td>-->
-<!--                    <td>Strapi</td>-->
-<!--                </tr>-->
-<!--                </tbody>-->
-<!--            </table>-->
-<!--        </div>-->
-<!--        <hr>-->
+        <span class="skill-title">Skill</span>
 
-<!--    </section>-->
+        <div>
+            <table border="1">
+                <tbody>
+                <tr>
+                    <td><img width="20px" src="assest/skillLogo/javascript.png" title="javascript" alt="javascript"><br>Javascript</td>
+                    <td><img width="20px" src="assest/skillLogo/java.png" title="java" alt="java"><br>Java</td>
+                    <td><img width="20px" src="assest/skillLogo/python.png" title="python" alt="python"><br>Python</td>
+                    <td>C</td>
+                    <td><img width="20px" src="assest/skillLogo/html.png" title="html" alt="html"><br>HTML</td>
+                    <td><img width="20px" src="assest/skillLogo/css.png" title="css" alt="css"><br>CSS</td>
+                </tr>
+                <tr>
+                    <td><img width="20px" src="assest/skillLogo/mysql.png" title="mysql" alt="mysql"><br>MySQL</td>
+                    <td><img width="20px" src="assest/skillLogo/react.png" title="react" alt="react"><br>React</td>
+                    <td>C#</td>
+                    <td><img width="20px" src="assest/skillLogo/springboot.png" title="springboot" alt="springboot"><br>SpringBoot</td>
+                    <td><img width="20px" src="assest/skillLogo/nodejs.png" title="nodejs" alt="nodejs"><br>NodeJS</td>
+                    <td><img width="20px" src="assest/skillLogo/tailwind.png" title="tailwind" alt="tailwind"><br>TailWind</td>
+                </tr>
+                <tr>
+                    <td><img width="20px" src="assest/skillLogo/typescript.png" title="typescript" alt="typescript"><br>TypeScript</td>
+                    <td>MongoDB</td>
+                    <td><img width="20px" src="assest/skillLogo/firebase.png" title="firebase" alt="firebase"><br>FireBase</td>
+                    <td>NestJS</td>
+                    <td><img width="20px" src="assest/skillLogo/materialui.png" title="meterialUI" alt="meterialUI"><br>meterialUI</td>
+                    <td>Strapi</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <hr>
+
+    </section>
 
 <!--    &lt;!&ndash;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45; Project section -&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&ndash;&gt;-->
 <!--    <section id="Project">-->
