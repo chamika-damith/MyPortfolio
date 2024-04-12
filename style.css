@@ -16,9 +16,9 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 20px 10%;
+    padding: 15px 10%;
     background: #111011;
-    backdrop-filter: blur(25px);
+    backdrop-filter: blur(50px);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -70,7 +70,7 @@ body {
     max-width: 600px;
 }
 .home-content h1 {
-    font-size: 56px;
+    font-size: 70px;
     font-weight: 700;
     margin: -3px 0;
     letter-spacing: 5px;
@@ -84,8 +84,10 @@ body {
 }
 .img {
     display: inline-block;
-    left: 55%;
-    bottom: 15%;
+    width: 400px;
+    height: 400px;
+    left: 60%;
+    bottom: 25%;
     margin-right: 5%;
     padding: 0;
     background-repeat: no-repeat;
@@ -96,10 +98,10 @@ body {
 .responsive {
     width: 100%;
     height: auto;
-    border-top-left-radius: 251px;
-    border-top-right-radius: 251px;
-    border-bottom-left-radius: 251px;
-    border-bottom-right-radius: 251px;
+    border-top-left-radius: 270px;
+    border-top-right-radius: 270px;
+    border-bottom-left-radius: 270px;
+    border-bottom-right-radius: 270px;
 }
 .btn-box {
     display: inline-block;
@@ -122,41 +124,104 @@ body {
 /*about*/
 .about{
     display: flex;
-    padding: 5px 5% 0;
+    padding: 50px 10%;
     border-bottom: 1px solid #363636;
-    padding-bottom: 10px;
+    min-height: 90vh;
 }
 .about-text{
-    padding-top: 120px;
-    padding-left: 100px;
+    padding-left: 200px;
 }
 .about-text h1{
-    padding-top: 40px;
-    font-size: 50px;
+    padding-top: 80px;
+    font-size: 55px;
 }
 .about-text h5{
-    font-size: 21px;
+    font-size: 22px;
     font-weight: normal;
 }
 .about-text p{
-    padding-top: 15px;
+    padding-top: 20px;
     font-size: 17px;
     font-weight: 10;
 }
 .about-text span{
-    padding-top: 10px;
-    font-size: 16px;
+    padding-top: 1px;
+    font-size: 19px;
     font-weight: bolder;
     color: #FD7E14;
 }
 .about-img{
-    width: 45%;
+    width: 400px;
+    height: 400px;
 }
 .abt-responsive {
     width: 100%;
     height: auto;
-    border-top-left-radius: 251px;
-    border-top-right-radius: 251px;
-    border-bottom-left-radius: 251px;
-    border-bottom-right-radius: 251px;
+    border-top-left-radius: 270px;
+    border-top-right-radius: 270px;
+    border-bottom-left-radius: 270px;
+    border-bottom-right-radius: 270px;
 }
+
+
+/* Skills */
+#Skills{
+    min-height: 97vh;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #363636;
+}
+
+.subtitle {
+    text-align: center;
+    font-size: 19px;
+    padding-bottom: 50px;
+    padding-top: 70px;
+    color: #FD7E14;
+
+}
+.cards{
+    width: 400px;
+    height: 320px;
+    min-width: 200px;
+    display: inline-block;
+    border-radius: 5px;
+    border: 5px solid #fda352;
+    margin: 20px;
+    margin-left: 5%;
+    margin-right: 5%;
+
+}
+.cards .des{
+    padding: 0px;
+}
+.titles{
+    text-align: center;
+    padding: 10px;
+}
+
+.cards .titles h1{
+    font-size: 33px;
+    background-image: linear-gradient(to right, #fcc095, #930000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.skill-icon {
+    width: 24px;
+    height: 24px;
+    padding-right: 5px;
+}
+.techs{
+    font-size: 18px;
+    display: inline-flex;
+    padding: 5px;
+    border: 2px solid #c59a7e;
+    width: fit-content;
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+.cards:hover{
+    box-shadow: 1px 1px 10px #fda352;
+}
+
