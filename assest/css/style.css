@@ -233,6 +233,10 @@ body {
 }
 
 /*projects*/
+#Projects{
+    min-height: 97vh;
+    border-bottom: 1px solid #363636;
+}
 .main-text {
     padding-top: 50px;
     margin-top: 10px;
@@ -315,6 +319,61 @@ body {
     color: white;
     transition: .3s;
     cursor: pointer;
+}
+
+
+/*assignments*/
+.assignment-section{
+    min-height: 97vh;
+    border-bottom: 1px solid #363636;
+}
+.Assignment{
+    display: grid;
+    grid-template-columns: repeat(4,250px);
+    grid-gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+.assignment-card{
+    width: 230px;
+    height: 110px;
+    border: 1px solid black;
+    margin-left: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 50px;
+    position: relative;
+    background-color: #3f3f3f;
+    overflow: hidden;
+}
+.assignment-details{
+    position: absolute;
+    bottom: -100%;
+    left: 90px;
+}
+.assignment-details p{
+    font-size: 17px;
+}
+.assignment-details a{
+    padding-left: 17px;
+    font-size: 20px;
+}
+.assignment-card span{
+    position: absolute;
+    top: 38px;
+    font-size: 21px;
+}
+.assignment-card:hover{
+    background: linear-gradient(0deg, rgb(133, 79, 37) 38%, rgba(63,63,63,1) 93%);
+    backdrop-filter: blur(9px);
+}
+.assignment-card:hover .assignment-details{
+     bottom: 17px;
+}
+.assignment-card:hover .assignment-title {
+    transform: translateY(-20px);
 }
 
 
