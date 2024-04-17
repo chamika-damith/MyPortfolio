@@ -324,7 +324,7 @@ body {
 
 /*assignments*/
 .assignment-section{
-    min-height: 97vh;
+    min-height: 85vh;
     border-bottom: 1px solid #363636;
 }
 .Assignment{
@@ -376,6 +376,55 @@ body {
     transform: translateY(-20px);
 }
 
+/*service*/
+#service-section{
+    min-height: 85vh;
+    border-bottom: 1px solid #363636;
+}
+.service{
+    display: grid;
+    grid-template-columns: repeat(4,320px);
+    justify-content: center;
+}
+.service-items{
+    width: 320px;
+    height: 400px;
+    border-right: 1px solid #6b6b6b;
+    background-color: #101010;
+    padding-top: 70px;
+    padding-left: 35px;
+}
+#service-item4{
+    border: none;
+}
+.service-heading{
+    font-size: 28px;
+    font-weight: normal;
+    margin-top: 30px;
+    padding-bottom: 25px;
+}
+.service-details{
+    font-weight: 100;
+    padding-bottom: 30px;
+}
+.service-items i{
+    color: #FD7E14;
+    font-size: 50px;
+}
+.service-items a{
+    text-decoration: none;
+}
+.service-button{
+    width: 45px;
+    height: 45px;
+    background-color: #3f3f3f;
+    justify-content: center;
+    text-align: center;
+}
+.service-button i{
+    font-size: 40px;
+    color: white;
+}
 
 /*media queries*/
 @media all and (max-width: 1300px) {
