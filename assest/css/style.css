@@ -425,6 +425,22 @@ body {
     font-size: 40px;
     color: white;
 }
+.service-items:hover{
+    background-color: #1e1e1e;
+    transition: 0.3s ease-in-out;
+}
+.service-items:hover i{
+    color: white;
+    transition: 0.3s ease-in-out;
+}
+.service-button:hover{
+    background-color: #FD7E14;
+    transition: 0.3s ease-in-out;
+}
+.service-items:hover .service-heading{
+    color: #FD7E14;
+    transition: 0.4s ease-in-out;
+}
 
 /*media queries*/
 @media all and (max-width: 1300px) {
