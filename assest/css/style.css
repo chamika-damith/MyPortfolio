@@ -1,3 +1,11 @@
+:root {
+    --first-color: hsl(82, 60%, 28%);
+    --title-color: hsl(0, 0%, 15%);
+    --text-color: hsl(0, 0%, 35%);
+    --body-color: hsl(0, 0%, 95%);
+    --container-color: hsl(0, 0%, 100%);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -10,7 +18,6 @@ body {
 }
 
 /*navbar*/
-
 .header {
     position: fixed;
     top: 0;
@@ -237,88 +244,122 @@ body {
     min-height: 97vh;
     border-bottom: 1px solid #363636;
 }
-.main-text {
-    padding-top: 50px;
-    margin-top: 10px;
-    padding-bottom: 30px;
-    align-items: center;
-    justify-items: center;
-
+.container {
+    display: grid;
+    place-items: center;
+    margin-inline: 1.5rem;
+    padding-block: 5rem;
 }
 
-.main-text h2 {
-    font-size: 60px;
-    line-height: 1;
-    text-align: center;
-    padding: 50px;
-    padding-bottom: 10px;
+.card__container {
+    display: grid;
+    gap: 3rem;
+    grid-template-columns: repeat(3, 1fr);
 }
 
-.main-text .card{
-    width: 305px;
-    min-width: 200px;
-    display: inline-block;
-    border-radius: 5px;
-    border: 1px solid #3f3f3f;
-    margin: 50px;
-    align-items: center;
+.card__article {
+    position: relative;
+    overflow: hidden;
 }
 
-.image img{
-    padding: 5px;
-    width: 100%;
-    height: 210px;
-    border-top-right-radius: 5px;
-    border-top-left-radius: 5px;
+.card__img {
+    width: 328px;
+    border-radius: .2rem;
 }
 
-.title{
-    text-align: start;
-    padding: 5px;
+.card__data {
+    width: 280px;
+    background-image: linear-gradient(to bottom, #d9a381, #965015);
+    padding: 1.5rem 2rem;
+    box-shadow: 0 8px 24px hsla(0, 0%, 0%, .15);
+    border-radius: .8rem;
+    position: absolute;
+    bottom: -9rem;
+    left: 0;
+    right: 0;
+    margin-inline: auto;
+    opacity: 0;
+    transition: opacity 1s 1s;
 }
 
-.card .title h1{
-    font-size: 20px;
+.card__description {
+    display: block;
+    margin-bottom: .40rem;
+    font-size: .90rem;
 }
 
-.des{
-    padding: 3px;
-    text-align: center;
-    padding-top: 0px;
-    border-bottom-right-radius: 5px;
-    border-bottom-left-radius: 5px;
+.card__title {
+    font-weight: 700;
+    color: var(--title-color);
+    margin-bottom: .75rem;
 }
-.des p{
-    text-align: justify;
-    padding: 5px;
-}
-.tech{
-    display: inline-flex;
-    align-items: center;
-    padding: 5px;
-    border: 1px solid #888888;
-    width: fit-content;
-    border-radius: 10px;
-    margin-left: 10px;
-    margin-top: 20px;
-    margin-bottom: 25px;
-}
-.code{
-    display: inline-block;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    background-color: transparent;
-    border: 1px solid #888888;
-    border-radius: 5px;
-    padding:10px;
-    color: #fda352;
+
+.card__button {
     text-decoration: none;
+    font-size: 30px;
+    color: #000000;
 }
-.code:hover{
-    background-image: linear-gradient(to right, #652f10, #721919);
-    color: white;
-    transition: .3s;
-    cursor: pointer;
+
+.card__article:hover .card__data {
+    animation: show-data 1s forwards;
+    opacity: 1;
+    transition: opacity .3s;
+}
+
+.card__article:hover .card__img {
+    box-shadow: 1px 1px 5px #fda352;
+    filter: blur(1.5px);
+    transition: filter 0.3s ease-in-out;
+}
+
+
+.card__article:hover {
+    animation: remove-overflow 2s forwards;
+}
+
+.card__article:not(:hover) {
+    animation: show-overflow 2s forwards;
+}
+
+.card__article:not(:hover) .card__data {
+    animation: remove-data 1s forwards;
+}
+
+@keyframes show-data {
+    50% {
+        transform: translateY(-10rem);
+    }
+    100% {
+        transform: translateY(-7rem);
+    }
+}
+
+@keyframes remove-overflow {
+    to {
+        overflow: initial;
+    }
+}
+
+@keyframes remove-data {
+    0% {
+        transform: translateY(-7rem);
+    }
+    50% {
+        transform: translateY(-10rem);
+    }
+    100% {
+        transform: translateY(.5rem);
+    }
+}
+
+@keyframes show-overflow {
+    0% {
+        overflow: initial;
+        pointer-events: none;
+    }
+    50% {
+        overflow: hidden;
+    }
 }
 
 
@@ -504,6 +545,8 @@ body {
     .about-text h1{
         font-size: 50px;
     }
+
+
 }
 
 @media all and (max-width: 1105px){
@@ -744,4 +787,9 @@ body {
     .header{
         padding: 15px 1%;
     }
+
+    .container {
+        margin-inline: 1rem;
+    }
+
 }
