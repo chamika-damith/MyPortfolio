@@ -71,7 +71,6 @@ body {
     display: flex;
     align-items: center;
     padding: 70px 10% 0;
-    border-bottom: 1px solid #363636;
 }
 .home-content {
     max-width: 600px;
@@ -136,13 +135,12 @@ body {
 .about{
     display: flex;
     padding: 50px 10%;
-    border-bottom: 1px solid #363636;
     min-height: 90vh;
     position: relative;
 }
 .about-text{
     position: absolute;
-    left: 38%;
+    left: 33%;
     padding-left: 200px;
 }
 .about-text h1{
@@ -158,18 +156,20 @@ body {
     font-size: 17px;
     font-weight: 10;
 }
-.about-text span{
-    padding-top: 1px;
-    font-size: 19px;
+#about-me{
+    font-size: 30px;
     font-weight: bolder;
-    color: #FD7E14;
+    background: -webkit-linear-gradient(right, #6241b6, #2a89f5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border-bottom: 2px solid #5942ab;
 }
 .about-img{
     display: inline-block;
     width: 400px;
     height: 400px;
     left: 10%;
-    bottom: 30%;
+    bottom: 25%;
     margin-right: 5%;
     padding: 0;
     background-repeat: no-repeat;
@@ -180,7 +180,12 @@ body {
     width: 100%;
     height: auto;
 }
-
+#about-name{
+    font-size: 55px;
+    background: -webkit-linear-gradient(right,#BD00FF, #00C2FF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 
 /* Skills */
 #Skills{
