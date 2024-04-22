@@ -49,14 +49,14 @@ body {
     margin-left: 27px;
 }
 .span{
-    background: -webkit-linear-gradient(right, #d48bff, #8edffc);
+    background: -webkit-linear-gradient(right, #b02cff, #2bc4fa);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 40px;
 }
 
 .navbar a:hover {
-    color: #FD7E14;
+    color: #8535fd;
     transition: 0.4s ease-in-out;
 }
 
@@ -140,7 +140,7 @@ body {
 }
 .about-text{
     position: absolute;
-    left: 33%;
+    left: 35%;
     padding-left: 200px;
 }
 .about-text h1{
@@ -253,7 +253,7 @@ body {
     min-width: 200px;
     display: inline-block;
     border-radius: 5px;
-    border: 5px solid #fda352;
+    border: 5px solid #7b68af;
     margin: 20px;
     margin-left: 5%;
     margin-right: 5%;
@@ -269,7 +269,9 @@ body {
 
 .cards .titles h1{
     font-size: 33px;
-    background-image: linear-gradient(to right, #fcc095, #930000);
+    background: -webkit-linear-gradient(right, #bb00ff, #285cec);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -283,14 +285,14 @@ body {
     font-size: 18px;
     display: inline-flex;
     padding: 5px;
-    border: 2px solid #c59a7e;
+    border: 2px solid #ffffff;
     width: fit-content;
     border-radius: 10px;
     margin-left: 10px;
     margin-top: 20px;
 }
 .cards:hover{
-    box-shadow: 1px 1px 10px #fda352;
+    box-shadow: 1px 1px 10px #4b00ff;
 }
 
 /*projects*/
@@ -322,7 +324,7 @@ body {
 
 .card__data {
     width: 280px;
-    background-image: linear-gradient(to bottom, #d9a381, #965015);
+    background-image: linear-gradient(to bottom, #c237f5, #2f5fec);
     padding: 1.5rem 2rem;
     box-shadow: 0 8px 24px hsla(0, 0%, 0%, .15);
     border-radius: .8rem;
@@ -360,7 +362,7 @@ body {
 }
 
 .card__article:hover .card__img {
-    box-shadow: 1px 1px 5px #fda352;
+    box-shadow: 1px 1px 5px #4b00ff;
     filter: blur(1.5px);
     transition: filter 0.3s ease-in-out;
 }
@@ -452,6 +454,7 @@ body {
     font-size: 17px;
 }
 .assignment-details a{
+    color: white;
     padding-left: 17px;
     font-size: 20px;
 }
@@ -461,7 +464,7 @@ body {
     font-size: 21px;
 }
 .assignment-card:hover{
-    background: linear-gradient(0deg, rgb(133, 79, 37) 38%, rgba(63,63,63,1) 93%);
+    background: linear-gradient(0deg, rgb(101, 44, 152) 38%, rgba(63,63,63,1) 93%);
     backdrop-filter: blur(9px);
 }
 .assignment-card:hover .assignment-details{
@@ -505,7 +508,7 @@ body {
     padding-bottom: 30px;
 }
 .service-items i{
-    color: #FD7E14;
+    color: #4700fc;
     font-size: 50px;
 }
 .service-items a{
@@ -531,11 +534,13 @@ body {
     transition: 0.3s ease-in-out;
 }
 .service-button:hover{
-    background-color: #FD7E14;
+    background-image: linear-gradient(to bottom, #7625ef, #2f5fec);
     transition: 0.3s ease-in-out;
 }
 .service-items:hover .service-heading{
-    color: #FD7E14;
+    background: -webkit-linear-gradient(right, #bb00ff, #285cec);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     transition: 0.4s ease-in-out;
 }
 
