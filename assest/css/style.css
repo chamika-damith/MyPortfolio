@@ -296,7 +296,6 @@ body {
 /*projects*/
 #Projects{
     min-height: 97vh;
-    border-bottom: 1px solid #363636;
 }
 .container {
     display: grid;
@@ -419,11 +418,11 @@ body {
 
 /*assignments*/
 .assignment-section{
-    margin-top: 60px;
+    margin-top: 80px;
     min-height: 85vh;
-    border-bottom: 1px solid #363636;
 }
 .Assignment{
+    margin-top: 90px;
     display: grid;
     grid-template-columns: repeat(4,250px);
     grid-gap: 20px;
@@ -472,12 +471,14 @@ body {
     transform: translateY(-20px);
 }
 
+
+
 /*service*/
 #service-section{
     min-height: 85vh;
-    border-bottom: 1px solid #363636;
 }
 .service{
+    margin-top: 90px;
     display: grid;
     grid-template-columns: repeat(4,320px);
     justify-content: center;
