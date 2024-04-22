@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Case3</title>
+    <link rel="stylesheet" href="/assests/normalize.css">
+
+    <style>
+        #outerCircle{
+            width: 300px;
+            aspect-ratio: 1/1;
+            border: 10px solid dimgray;
+            border-radius: 100%;
+
+            position: fixed;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+
+        }
+        #outerCircle>div{
+            width: calc(100% - 20px);
+            aspect-ratio: 1/1;
+            border: 10px solid red;
+            border-radius: 100%;
+
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+        section{
+            position: absolute;
+            width: fit-content;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+        section>div{
+            width: 280px;
+            aspect-ratio: 1/1;
+            /*background-color: orange;*/
+            border-radius: 100%;
+            /*margin-top:245px ;
+            margin-bottom: 245px;*/
+
+            margin: 245px 0;
+            position: relative;
+
+        }
+
+        section>div:first-child{
+            background-color: purple;
+        }
+        section>div:nth-child(2){
+            background-color: dodgerblue;
+        }
+        section>div:last-child{
+            background-color: darkred;
+        }
+
+        section>div>span{
+            position: absolute;
+            color: white;
+            font-weight: bold;
+            width: fit-content;
+            height: fit-content;
+            right: 0;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            text-align: center;
+        }
+
+    </style>
+
+
+</head>
+<body>
+
+<section>
+    <div>
+        <span>Hello</span>
+    </div>
+
+    <div>
+        <span>Welcome To The</span>
+    </div>
+
+    <div>
+        <span>Institute Of Software Engineering </span>
+    </div>
+</section>
+
+<div id="outerCircle">
+    <div></div>
+</div>
+
+</body>
+</html>
