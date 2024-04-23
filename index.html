@@ -14,13 +14,14 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
 <header class="header">
     <a href="#" class="logo"><span class="span">C</span>hamika</a>
     <nav class="navbar" id="myLinks">
         <a href="#Home" class="active" >Home</a>
-        <a href="#About" >About</a>
+        <a href="#About">About</a>
         <a href="#Skills" >Skills</a>
         <a href="#Assignment" >Assignment</a>
         <a href="#Projects" >Projects</a>
@@ -31,7 +32,7 @@
 
 <main>
     <!----------- Home section ------------->
-    <section class="home" id="Home">
+    <section class="home section" id="Home">
         <div class="home-content">
             <h1>App & Software<br>Developer</h1>
             <h4>Chamika Damith - - - -</h4>
@@ -51,7 +52,7 @@
     <br>
 
     <!--About Section-->
-    <section class="about" id="About">
+    <section class="about section" id="About">
 
         <div class="about-img">
             <img src="/assest/IMG-20230823-WA0017.jpg" title="myImage2" alt="MyImage2" class="abt-responsive" width="100px" height="100px"><br>
@@ -88,7 +89,7 @@
         </div>
     </section>
 
-    <section id="Skills">
+    <section id="Skills" class="section">
         <span class="subtitle">Skills</span>
 
         <!--Frontend -->
@@ -259,7 +260,7 @@
     </section>
 
     <!--Assignments section-->
-    <section class="assignment-section">
+    <section class="assignment-section section" id="section">
 
         <span class="subtitle">Assignment</span>
         <div class="Assignment">
@@ -380,7 +381,7 @@
 
 
     <!--Projects-->
-    <section id="Projects">
+    <section id="Projects" class="section">
         <span class="subtitle">Projects</span>
 
         <div class="project-menu">
@@ -442,13 +443,43 @@
                         <a href="https://github.com/chamika-damith/Bootstrap-pos-system.git" target="_blank" class="card__button"><i class="ri-github-fill"></i></a>
                     </div>
                 </article>
+
+                <article class="card__article ui-project">
+                    <img src="assest/images/portfolio-ss.png" alt="image" class="card__img">
+
+                    <div class="card__data">
+                        <h3 class="card__title">Portfolio UI</h3>
+                        <p class="card__description">Portfolio UI Design Figma</p>
+                        <a href="https://www.figma.com/file/mk9QoNkGlqJLe6Sq7uQk5T/Untitled?type=design&node-id=0%3A1&mode=design&t=OlIInvzctW9vNoJR-1" target="_blank" class="card__button"><i class="fa-brands fa-figma"></i></a>
+                    </div>
+                </article>
+
+                <article class="card__article ui-project">
+                    <img src="assest/images/ecommerceUi.png" alt="image" class="card__img">
+
+                    <div class="card__data">
+                        <h3 class="card__title">E Commerce Web UI</h3>
+                        <p class="card__description">E Commerce Website UI Design Figma</p>
+                        <a href="https://www.figma.com/file/ryKAvzllH0zapEshbfBvgY/Untitled?type=design&mode=design&t=Lxa9e6TznY6phc2i-1" target="_blank" class="card__button"><i class="fa-brands fa-figma"></i></a>
+                    </div>
+                </article>
+
+                <article class="card__article ui-project">
+                    <img src="assest/images/dipManagementUi.png" alt="image" class="card__img">
+
+                    <div class="card__data">
+                        <h3 class="card__title">Bus Yard Management System UI</h3>
+                        <p class="card__description">Bus Yard Management System UI Design Figma</p>
+                        <a href="https://www.figma.com/file/wtrP56rZDEqjdq4LKsWMuR/Login-Page-UI-Design-(Community)?type=design&node-id=0%3A1&mode=design&t=Lxa9e6TznY6phc2i-1" target="_blank" class="card__button"><i class="fa-brands fa-figma"></i></a>
+                    </div>
+                </article>
             </div>
         </div>
     </section>
 
 
     <!------------ Service section ------------->
-    <section id="service-section">
+    <section id="service-section" class="section">
 
         <span class="subtitle">Services</span>
 
@@ -496,7 +527,7 @@
     </section>
 
     <!---------- Contact section ----------->
-    <section id="Contact">
+    <section id="Contact" class="section">
 
         <div class="contact-section">
             <div class="contact-title">
