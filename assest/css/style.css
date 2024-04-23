@@ -450,6 +450,23 @@ body {
         overflow: hidden;
     }
 }
+.project-menu{
+    display: flex;
+    justify-content: space-between;
+    width: 470px;
+    margin-left: 33vw;
+    margin-top: 50px;
+}
+.menu-item{
+    padding: 5px 15px;
+    border-radius: 20px;
+    border: 1px solid white;
+    background-color: white;
+}
+.menu-item a{
+    text-decoration: none;
+    font-weight: 500;
+}
 
 
 /*assignments*/
