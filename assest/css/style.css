@@ -65,7 +65,7 @@ body {
     position: relative;
     width: 100%;
     justify-content: space-between;
-    min-height: 97vh;
+    min-height: 100vh;
     background-size: cover;
     background-position: center;
     display: flex;
@@ -137,6 +137,7 @@ body {
     padding: 50px 10%;
     min-height: 100vh;
     position: relative;
+    margin-bottom: 20vh;
 }
 .about-text{
     position: absolute;
@@ -229,6 +230,30 @@ body {
 }
 
 
+.scroll-icon{
+    position: absolute;
+    margin-top: 95vh;
+    margin-left: 39vw;
+}
+
+.div1 {
+    display: flex;
+    flex-direction: column;
+    height: 4rem;
+    width: 1px;
+    background-image: linear-gradient(to bottom, transparent, #bd00ff);
+}
+
+.circle {
+    width: 25px;
+    height: 25px;
+    border: 2px solid #bd00ff;
+    border-radius: 50%;
+    box-sizing: border-box;
+    margin-left: -11.5px;
+}
+
+
 /* Skills */
 #Skills{
     align-content: center;
@@ -295,9 +320,18 @@ body {
     box-shadow: 1px 1px 10px #4b00ff;
 }
 
+#Skills .scroll-icon{
+    margin-top: -0.1px;
+    margin-left: 49vw;
+}
+#Skills .scroll-icon .circle{
+    margin-left: -1px;
+}
+
 /*projects*/
 #Projects{
     min-height: 97vh;
+    margin-top: 70px;
 }
 .container {
     display: grid;
@@ -319,7 +353,7 @@ body {
 
 .card__img {
     width: 328px;
-    border-radius: .2rem;
+    border-radius: 1rem;
 }
 
 .card__data {
@@ -472,6 +506,10 @@ body {
 }
 .assignment-card:hover .assignment-title {
     transform: translateY(-20px);
+}
+.Assignment .scroll-icon{
+    margin-top: 90vh;
+    margin-left: 49vw;
 }
 
 
