@@ -464,10 +464,11 @@ body {
     border-radius: 20px;
     border: 1px solid white;
     background-color: white;
+    color: #0077ff;
+    font-weight: 550;
 }
-.menu-item a{
-    text-decoration: none;
-    font-weight: 500;
+.menu-item:hover{
+    cursor: pointer;
 }
 
 
@@ -601,7 +602,7 @@ body {
     transition: 0.4s ease-in-out;
 }
 
-/*content*/
+/*contact*/
 #Contact{
     min-height: 97vh;
 }

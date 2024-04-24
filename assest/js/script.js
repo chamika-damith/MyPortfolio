@@ -65,13 +65,21 @@ document.addEventListener("DOMContentLoaded", function() {
     allLinks.forEach(function(link) {
         link.addEventListener("click", function(event) {
             event.preventDefault();
-            desktopProjects.forEach(function(project) {
-                project.style.display = "block";
-            });
-            uiProjects.forEach(function(project) {
-                project.style.display = "block";
-            });
-            webProject.style.display = "block";
+            showAllProjects();
         });
     });
+
+    function showAllProjects(){
+        desktopProjects.forEach(function(project) {
+            project.style.display = "block";
+        });
+        uiProjects.forEach(function(project) {
+            project.style.display = "block";
+        });
+        webProject.style.display = "block";
+    }
+
+    //projects
+    var project=document.querySelector(".mixitup-active");
+    var mixer=mixitup(project);
 });
