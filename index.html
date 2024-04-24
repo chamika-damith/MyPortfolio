@@ -89,6 +89,9 @@
         </div>
     </section>
 
+
+   <!--skills section-->
+
     <section id="Skills" class="section">
         <span class="subtitle">Skills</span>
 
@@ -260,7 +263,7 @@
     </section>
 
     <!--Assignments section-->
-    <section class="assignment-section section" id="section">
+    <section id="section" class="assignment-section section">
 
         <span class="subtitle">Assignment</span>
         <div class="Assignment">
@@ -529,16 +532,38 @@
     <!---------- Contact section ----------->
     <section id="Contact" class="section">
 
-        <div class="contact-section">
-            <div class="contact-title">
-                <h1>Send Me A Message</h1>
-                <p>Your email address will not be published. All fields are required</p>
+        <div class="contact-container">
+            <h1 class="contact-subtitle">Send Me A Message</h1>
+            <p class="contact-about">Your email address will not be published. All fields are required</p>
+
+            <div class="contact-section">
+                <div class="contact-info">
+                    <div class="contact-title">
+                        <h3>Contact info</h3>
+                    </div>
+                    <div class="contact-details">
+                        <p> <i class="ri-user-fill"></i>S.D.C Damith Disanayaka</p>
+                        <p> <i class="ri-mail-fill"></i>chamikadamith9@gmail.com</p>
+                        <p> <i class="ri-phone-fill"></i> +94785765111</p>
+                        <p> <i class="ri-map-pin-fill"></i>  D-5,Wahalkada,Kebithigollawa</p>
+                    </div>
+                </div>
+
+                <div class="messageDetail">
+                    <h3>Contact me</h3>
+                    <label for="name" >Name*</label><br>
+                    <input type="text" id="name" placeholder="Your Name" required>
+
+                    <label for="email" >Email*</label><br>
+                    <input type="text" id="email" placeholder="Your Email" required>
+
+                    <label for="message" >Message*</label><br>
+                    <textarea id="message" placeholder="Your Message"></textarea>
+
+                    <button class="message-submit">Submit now</button>
+                </div>
             </div>
-            <form class="contact-form">
-
-            </form>
         </div>
-
     </section>
 </main>
 
