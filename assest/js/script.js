@@ -2,21 +2,21 @@
 let sections = document.querySelectorAll('section');
 let navLinks = document.querySelectorAll('header nav a');
 
-window.onscroll = () => {
-    sections.forEach(sec => {
-        let top = window.scrollY;
-        let offset = sec.offsetTop - 150;
-        let height = sec.offsetHeight;
-        let id = sec.getAttribute('id');
-
-        if (top >= offset && top < offset + height) {
-            navLinks.forEach(links => {
-                links.classList.remove('active');
-                document.querySelector('header nav a[href*=' + id + ']').classList.add('active');
-            });
-        };
+window.onscroll = function() {
+    var sections = document.querySelectorAll('section');
+    sections.forEach(function(section) {
+        var top = section.offsetTop;
+        var height = section.clientHeight;
+        if (window.pageYOffset >= top && window.pageYOffset < top + height) {
+            var id = section.getAttribute('id');
+            document.querySelector('nav a[href="#' + id + '"]').classList.add('active');
+        } else {
+            var id = section.getAttribute('id');
+            document.querySelector('nav a[href="#' + id + '"]').classList.remove('active');
+        }
     });
 };
+
 
 
 

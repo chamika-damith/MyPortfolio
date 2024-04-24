@@ -711,6 +711,56 @@ body {
     font-weight: 800;
 }
 
+
+/*footer section*/
+.footer-section{
+    min-height: 40vh;
+    position: relative;
+}
+.footer-title{
+    left: 42vw;
+    top: 18vh;
+    position: absolute;
+    font-size: 25px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    cursor: default;
+    letter-spacing: 5px;
+}
+.span-footer{
+    background: -webkit-linear-gradient(right, #b02cff, #2bc4fa);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 34px;
+}
+.social-icon{
+    left: 37vw;
+    width: 500px;
+    top: 27vh;
+    position: absolute;
+}
+.social-icon a{
+    margin-right: 55px;
+    font-size: 30px;
+    font-weight: 300;
+    text-decoration: none;
+    color: white;
+}
+.footer-section h5{
+    font-size: 12px;
+    left: 35vw;
+    width: 500px;
+    top: 35vh;
+    position: absolute;
+    font-weight: 350;
+    letter-spacing:3px;
+}
+.social-icon a:hover{
+    color: #0b70f3;
+    transition: 0.3s ease-in-out;
+}
+
 /*media queries*/
 @media all and (max-width: 1300px) {
     .img {
