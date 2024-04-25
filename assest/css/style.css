@@ -1121,16 +1121,17 @@ body {
     }
 }
 
-@media all and (max-width: 495px){
+@media all and (max-width: 428px){
     .home {
         padding: 130px 7% 0px 80px;
-        height: 120vh;
+        height: 90vh;
     }
     .img {
         width: 290px;
         height: 290px;
-        left: 22vw;
+        left: 59vw;
         padding-top: 20px;
+        top: 40vh;
     }
     .home-content h1 {
         font-size: 45px;
@@ -1139,7 +1140,7 @@ body {
         font-size: 11px;
     }
     .navbar a {
-        font-size: 5px;
+        font-size: 12px;
         margin-left: 1px;
     }
     .header{
@@ -1148,6 +1149,59 @@ body {
 
     .container {
         margin-inline: 1rem;
+    }
+    .about-img{
+        margin-left: 80vw;
+    }
+    .about-img-text{
+        margin-left: 45vw;
+        margin-top: -13vh;
+    }
+    .about-text{
+        padding-left: 30vw;
+    }
+    .scroll-icon{
+        margin-left: 90vw;
+    }
+    #Skills{
+        margin-left:42vw;
+    }
+    .Assignment .scroll-icon{
+        margin-left: 65vw;
+    }
+    .assignment-section{
+        margin-left:30vw;
+        width: 120vw;
+    }
+    #Projects{
+        width: 180vw;
+    }
+    #Projects span{
+        margin-left: 80vw;
+    }
+    .project-menu{
+        margin-left: 35vw;
+    }
+    #service-section span{
+        margin-left:80vw;
+    }
+    .service{
+        margin-left: 80vw;
+    }
+    #Contact span{
+        margin-left: 80vw;
+    }
+    .contact-container{
+        width: 165vw;
+    }
+    .footer-section{
+        margin-left: 35vw;
+    }
+    .social-icon{
+        left: 25vw;
+    }
+    .footer-section h5{
+        left: 18vw;
     }
 
 }
