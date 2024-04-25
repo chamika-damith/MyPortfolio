@@ -135,6 +135,7 @@ body {
 
 /*about */
 .about{
+    width: 100%;
     display: flex;
     padding: 50px 10%;
     min-height: 100vh;
@@ -635,7 +636,7 @@ body {
 .contact-section{
     width: 880px;
     height: 350px;
-    margin-left:10vw;
+    margin-left:5vw;
     margin-top: 12vh;
     display: flex;
     justify-content: space-between;
@@ -718,7 +719,7 @@ body {
     position: relative;
 }
 .footer-title{
-    left: 42vw;
+    left: 43vw;
     top: 18vh;
     position: absolute;
     font-size: 25px;
@@ -876,13 +877,12 @@ body {
     .home {
         flex-direction: column;
         align-items: center;
-        padding: 130px 10% 0;
-        border-bottom: 1px solid #363636;
-        height: 120vh;
+        padding: 13px  0;
+        height: 50vh;
     }
     .img {
         width: 300px;
-        height: 300px;
+        height: 00px;
         padding-top: 50px;
         left: 33vw;
     }
@@ -914,16 +914,18 @@ body {
     }
 }
 
-@media all and (max-width: 768px) {
+@media all and (max-width: 778px) {
     .home {
+        width: 768px;
         padding: 130px 7% 0;
-        height: 120vh;
+        height: 90vh;
+        min-height: 50vh;
     }
     .img {
         width: 295px;
         height: 295px;
         left: 32vw;
-        padding-top: 20px;
+        top: 42%;
     }
     .home-content h1 {
         font-size: 55px;
@@ -1039,6 +1041,61 @@ body {
 
     .container {
         margin-inline: 1rem;
+    }
+
+}
+
+
+@media all and (max-width: 395px){
+    .home {
+        width: 380px;
+        padding: 130px 7% 0px 80px;
+        height: 120vh;
+    }
+    .img {
+        width: 250px;
+        height: 250px;
+        left: 22vw;
+        padding-top: 20px;
+    }
+    .home-content h1 {
+        font-size: 41px;
+    }
+    .home-content h4 {
+        font-size: 11px;
+    }
+    .navbar a {
+        font-size: 7px;
+        margin-left: 1px;
+    }
+    .header{
+        padding: 15px 1%;
+        width: 380px;
+    }
+
+    .container {
+        margin-inline: 1rem;
+    }
+    .about{
+        width: 380px;
+    }
+    #Skills{
+        width: 380px;
+    }
+    #Projects{
+        width: 380px;
+    }
+    .assignment-section{
+        width: 380px;
+    }
+    #service-section{
+        width: 380px;
+    }
+    #Contact{
+        width: 380px;
+    }
+    .footer-section{
+        width: 380px;
     }
 
 }
