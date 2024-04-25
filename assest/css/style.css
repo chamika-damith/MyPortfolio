@@ -307,7 +307,7 @@ body {
 .skill-icon {
     width: 24px;
     height: 24px;
-    padding-right: 5px;
+    padding-right: 6px;
 }
 .techs{
     font-size: 18px;
@@ -539,6 +539,7 @@ body {
 /*service*/
 #service-section{
     min-height: 85vh;
+    margin-top: 60px;
 }
 .service{
     margin-top: 90px;
@@ -607,7 +608,6 @@ body {
 /*contact*/
 #Contact{
     min-height: 97vh;
-    display: flex;
     justify-content: center;
 }
 .contact-subtitle{
@@ -632,6 +632,8 @@ body {
     background-color: #1a1a1a;
     display: flex;
     flex-direction: column;
+    margin-top: 10vh;
+    margin-left: 7vw;
 }
 .contact-section{
     width: 880px;
@@ -897,7 +899,6 @@ body {
     .about{
         flex-direction: column;
         align-items: center;
-        min-height: 140vh;
     }
     .about-text{
         top: 510px;
@@ -927,6 +928,13 @@ body {
         left: 32vw;
         top: 42%;
     }
+    .about{
+        min-height: 110vh;
+    }
+    .about-img-text{
+        margin-left: 25vw;
+        margin-top: -15vw;
+    }
     .home-content h1 {
         font-size: 55px;
     }
@@ -945,6 +953,105 @@ body {
     }
     .about-text{
         left: 8vw;
+        top: 550px;
+    }
+    .scroll-icon{
+        margin-left: 0vw;
+        margin-top: 108vh;
+    }
+    .Assignment{
+        grid-template-columns: repeat(3,220px);
+    }
+    .assignment-card{
+        width: 200px;
+        padding-left: 30px;
+    }
+    .assignment-details{
+        left: 65px;
+    }
+    .assignment-section{
+        min-height: 88vh
+    }
+    .subtitle{
+        margin-left: 42vw;
+    }
+    .project-menu{
+        margin-left: 20vw;
+    }
+    .card__container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .service{
+        grid-template-columns: repeat(2,320px);
+    }
+    .service-items{
+        border-right: none;
+    }
+    .service-items:nth-child(1){
+        border-right: 1px solid #6b6b6b;
+        border-bottom: 1px solid #6b6b6b;
+    }
+    .service-items:nth-child(3){
+        border-right: 1px solid #6b6b6b;
+    }
+    .service-items:nth-child(2){
+        border-bottom: 1px solid #6b6b6b;
+    }
+    #Contact {
+        margin-top: 80px;
+    }
+    .contact-subtitle{
+        font-size: 50px;
+    }
+    .contact-about{
+        font-size: 15px;
+    }
+    .contact-section{
+        margin-left:0;
+        width: 610px;
+    }
+    .messageDetail h3{
+        font-size: 15px;
+    }
+    .contact-title{
+        font-size: 13px;
+    }
+    .messageDetail label{
+        font-size: 10px;
+    }
+    .messageDetail input{
+        width: 250px;
+    }
+    .messageDetail textarea{
+        width: 250px;
+    }
+    .contact-details{
+        font-size: 12px;
+    }
+    .message-submit{
+        width: 110px;
+        height: 35px;
+        font-size: 14px;
+    }
+    .contact-container{
+        height: 80vh;
+    }
+    .footer-section{
+        min-height: 0;
+        height: 150px;
+    }
+    .footer-title{
+        top: 0;
+        bottom: 0;
+    }
+    .social-icon{
+        top: 60px;
+        bottom: 0;
+        left: 31vw;
+    }
+    .footer-section h5{
+        top: 120px;
+        left: 26vw;
     }
 
 }
