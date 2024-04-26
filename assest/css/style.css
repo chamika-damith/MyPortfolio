@@ -1207,17 +1207,17 @@ body {
 }
 
 
-@media all and (max-width: 395px){
+@media all and (max-width: 360px){
     .home {
         width: 380px;
-        padding: 130px 7% 0px 80px;
+        padding: 130px 7% 0px 20px;
         height: 120vh;
     }
     .img {
         width: 250px;
         height: 250px;
-        left: 22vw;
-        padding-top: 20px;
+        left: 18vw;
+        padding-top: 20vh;
     }
     .home-content h1 {
         font-size: 41px;
@@ -1239,12 +1239,161 @@ body {
     }
     .about{
         width: 380px;
+
+    }
+    .about-text {
+        padding-left: 0vw;
+        left: 0;
+        right: 0;
+    }
+    #about-me {
+        font-size: 20px;
+    }
+    .about-text h1 {
+        font-size: 25px;
+    }
+    .about-text p {
+        opacity: 80%;
+        font-size: 11px;
+    }
+    .fun-fact {
+        width: 300px;
+        margin-left: 30px;
+    }
+    .about .scroll-icon {
+        margin-left: 0vw;
+        top: 130px;
+    }
+    .about-text h5 {
+        font-size: 13px;
+        opacity: 80%;
+    }
+    .about-img{
+        width: 250px;
+        height: 250px;
+        margin-left: 0vw;
+    }
+    .about-img-text{
+        width: 100px;
+        height: 120px;
+        margin-left: 45vw;
+        margin-top: -10vh;
+    }
+    .about-img-text h1 {
+        font-size: 50px;
+        padding-left: 35px;
+    }
+    .about-img-text span {
+        font-size: 10px;
+        padding-left: 11px;
     }
     #Skills{
-        width: 380px;
+        margin-left: 0;
+        margin-top: 40vh;
+    }
+    .subtitle{
+        font-size: 20px;
+    }
+    #Skills .subtitle{
+        margin-left: 45vw;
+    }
+    .cards {
+        width: 300px;
+        height: 220px;
+    }
+    .cards .titles h1{
+        font-size: 23px;
+    }
+    .techs {
+        font-size: 13px;
+        margin-top: 10px;
+    }
+    .assignment-section{
+        margin-left: 0;
+    }
+    .Assignment {
+        grid-template-columns: repeat(1, 250px);
+    }
+    .assignment-section .subtitle{
+        margin-left: 130px;
+    }
+    .cards .titles{
+        padding-top: 0;
+    }
+    .skill-icon {
+        width: 13px;
+        height: 13px;
     }
     #Projects{
         width: 380px;
+    }
+    #Projects .subtitle{
+        margin-left: 40vw;
+    }
+    .project-menu{
+        width: 270px;
+        margin-left: 12vw;
+    }
+    .menu-item {
+        padding: 3px 8px;
+        border-radius: 20px;
+        border: 1px solid white;
+        background-color: white;
+        color: #0077ff;
+        font-weight: 500;
+        font-size: 10px;
+    }
+    .card__container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .card__img {
+        width: 228px;
+    }
+    .container{
+        margin: 0;
+    }
+    .card__data {
+        width: 200px;
+        height: 130px;
+    }
+    .card__title {
+        text-align: center;
+        font-size: 13px;
+        font-weight: 800;
+    }
+    #service-section span {
+        margin-left: 40vw;
+    }
+    .service {
+        margin-left: 0vw;
+        grid-template-columns: repeat(1, 270px);
+    }
+    .service-items {
+        width: 260px;
+        height: 300px;
+        padding-top: 15px;
+    }
+    .service-heading{
+        padding-bottom:15px;
+    }
+    .service-button {
+        width: 35px;
+        height: 35px;
+    }
+    .service-items i{
+        font-size: 45px;
+    }
+    .service-items i {
+        font-size: 30px;
+    }
+    .card__description {
+        margin-bottom: .40rem;
+        font-size: 10px;
+        text-align: center;
+    }
+    .card__button {
+        margin-left: 15vw;
+        font-size: 20px;
     }
     .assignment-section{
         width: 380px;
@@ -1252,11 +1401,78 @@ body {
     #service-section{
         width: 380px;
     }
+    .service-items:nth-child(1){
+        border-right: none;
+    }
+    .service-items:nth-child(3){
+        border-right: none;
+        border-bottom: 1px solid #6b6b6b;
+    }
     #Contact{
         width: 380px;
     }
-    .footer-section{
-        width: 380px;
+    #Contact span {
+        margin-left: 40vw;
     }
-
+    .contact-container {
+        width: 85vw;
+        height: 120vh;
+    }
+    .contact-subtitle {
+        font-size: 25px;
+    }
+    .contact-about {
+        font-size: 12px;
+    }
+    .contact-section {
+        margin-left: 0;
+        width: 80vw;
+        display: flex;
+        flex-direction: column;
+    }
+    .contact-info {
+        width: 80vw;
+        height: 300px;
+    }
+    .contact-title {
+        font-size: 13px;
+        margin-left: 25vw;
+    }
+    .contact-details {
+        margin-left: 35px;
+    }
+    .messageDetail h3 {
+        font-size: 15px;
+        margin-left: 17vw;
+    }
+    .messageDetail{
+        padding-left: 35px;
+    }
+    .messageDetail input {
+        width: 250px;
+    }
+    .message-submit{
+        margin-left:60px;
+    }
+    .footer-section {
+        width: 380px;
+        margin-top: 10vh;
+        margin-left: 0vw;
+    }
+    .footer-title {
+        left: 30vw;
+    }
+    .social-icon {
+        left: 20vw;
+        width: 260px;
+    }
+    .social-icon a {
+        margin-right: 30px;
+        font-size: 25px;
+    }
+    .footer-section h5 {
+        left: 13vw;
+        font-size: 6px;
+        width: 270px;
+    }
 }
