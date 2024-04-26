@@ -1325,6 +1325,7 @@ body {
         height: 13px;
     }
     #Projects{
+        margin-top: 150px;
         width: 380px;
     }
     #Projects .subtitle{
@@ -1397,6 +1398,10 @@ body {
     }
     .assignment-section{
         width: 380px;
+    }
+    .Assignment .scroll-icon {
+        margin-left: 50vw;
+        margin-top: 220vh;
     }
     #service-section{
         width: 380px;
