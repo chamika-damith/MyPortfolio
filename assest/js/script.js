@@ -2,22 +2,31 @@
 let sections = document.querySelectorAll('section');
 let navLinks = document.querySelectorAll('header nav a');
 
-window.onscroll = function() {
-    var sections = document.querySelectorAll('section');
-    sections.forEach(function(section) {
-        var top = section.offsetTop;
-        var height = section.clientHeight;
-        if (window.pageYOffset >= top && window.pageYOffset < top + height) {
-            var id = section.getAttribute('id');
-            document.querySelector('nav a[href="#' + id + '"]').classList.add('active');
-        } else {
-            var id = section.getAttribute('id');
-            document.querySelector('nav a[href="#' + id + '"]').classList.remove('active');
-        }
+AOS.init();
+
+$(document).on("mousemove", function(e) {
+    console.log(e.pageX, e.pageY);
+    $(".mouseMove").css({
+        left: e.pageX -22,
+        top: e.pageY - 20
     });
-};
+});
 
 
+// window.onscroll = function() {
+//     var sections = document.querySelectorAll('section');
+//     sections.forEach(function(section) {
+//         var top = section.offsetTop;
+//         var height = section.clientHeight;
+//         if (window.pageYOffset >= top && window.pageYOffset < top + height) {
+//             var id = section.getAttribute('id');
+//             document.querySelector('nav a[href="#' + id + '"]').classList.add('active');
+//         } else {
+//             var id = section.getAttribute('id');
+//             document.querySelector('nav a[href="#' + id + '"]').classList.remove('active');
+//         }
+//     });
+// };
 
 
 //projects section-----------------------------------------------------------------------------
@@ -80,7 +89,7 @@ document.addEventListener("DOMContentLoaded", function() {
         webProject.style.display = "block";
     }
 
-    //projects
+    //projects------------------------------------
     var project=document.querySelector(".mixitup-active");
     var mixer=mixitup(project);
 });

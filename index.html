@@ -15,8 +15,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
+<div class="mouseMove"></div>
 <header class="header">
     <a href="#" class="logo"><span class="span">C</span>hamika</a>
     <nav class="navbar" id="myLinks">
@@ -34,17 +36,17 @@
     <!----------- Home section ------------->
     <section class="home section" id="Home">
         <div class="home-content">
-            <h1>App & Software<br>Developer</h1>
-            <h4>Chamika Damith - - - -</h4>
+            <h1 data-aos="fade-right" data-aos-duration="1000">App & Software<br>Developer</h1>
+            <h4 data-aos="fade-right" data-aos-duration="1000">Chamika Damith - - - -</h4>
 
-            <div class="img">
+            <div class="img" data-aos="fade-left" data-aos-duration="1000">
                 <img src="/assest/IMG-20230823-WA0017.jpg" class="responsive" width="100px" height="100px">
             </div>
 
             <div class="home-sci">
 
             </div>
-            <a href="" class="btn-box">Download CV</a>
+            <a href="" class="btn-box" data-aos="zoom-in" data-aos-duration="1000">Download CV</a>
 
         </div>
 
@@ -54,36 +56,38 @@
     <!--About Section-->
     <section class="about section" id="About">
 
-        <div class="about-img">
+        <div class="about-img " data-aos="zoom-in" data-aos-duration="1500">
             <img src="/assest/IMG-20230823-WA0017.jpg" title="myImage2" alt="MyImage2" class="abt-responsive" width="100px" height="100px"><br>
-            <div class="about-img-text">
+            <div class="about-img-text" data-aos="zoom-out-up" data-aos-duration="1500">
                 <h1>1+</h1>
                 <span>Years Experience</span>
             </div>
         </div>
 
-        <div class="about-text">
+        <div class="about-text" data-aos="zoom-out-up" data-aos-duration="1500">
             <span id="about-me">About me</span>
-            <h1>Welcome to <span id="about-name">Chamika,</span> <br>Best Software Services</h1>
-            <h5>Hello,I am Chamika Damith.Currently, I am doing<br> my higher study about Software Engineering.</h5>
-            <p class="about-heading">A wonderful serenity has taken possession of my entire soul, like<br> these sweet mornings of spring which I enjoy with my whole<br> heart. I am alone, and feel the charm of existence in this spot,<br> which was created for the bliss of souls like mine. I am so happy,<br> my dear friend, so absorbed in the exquisite</p>
-            <div class="fun-fact">
-                <div class="fun-fact-item">
-                    <h1>500+</h1>
-                    <p>Project Complete</p>
-                </div>
-                <div class="fun-fact-item">
-                    <h1>53+</h1>
-                    <p>Awards Win</p>
-                </div>
-                <div class="fun-fact-item">
-                    <h1>2M+</h1>
-                    <p>Happy clients</p>
-                </div>
+            <div data-aos="flip-right">
+                <h1 data-aos="zoom-out-up" data-aos-duration="1500">Welcome to <span id="about-name">Chamika,</span> <br>Best Software Services</h1>
+                <h5 data-aos="zoom-out-up" data-aos-duration="1500">Hello,I am Chamika Damith.Currently, I am doing<br> my higher study about Software Engineering.</h5>
+                <p class="about-heading" data-aos="zoom-out-up" data-aos-duration="1500">A wonderful serenity has taken possession of my entire soul, like<br> these sweet mornings of spring which I enjoy with my whole<br> heart. I am alone, and feel the charm of existence in this spot,<br> which was created for the bliss of souls like mine. I am so happy,<br> my dear friend, so absorbed in the exquisite</p>
+                <div class="fun-fact" >
+                    <div class="fun-fact-item" data-aos="zoom-out-up" data-aos-duration="1100">
+                        <h1>500+</h1>
+                        <p>Project Complete</p>
+                    </div>
+                    <div class="fun-fact-item" data-aos="zoom-out-up" data-aos-duration="1100">
+                        <h1>53+</h1>
+                        <p>Awards Win</p>
+                    </div>
+                    <div class="fun-fact-item" data-aos="zoom-out-up" data-aos-duration="1100">
+                        <h1>2M+</h1>
+                        <p>Happy clients</p>
+                    </div>
 
+                </div>
             </div>
         </div>
-        <div class="scroll-icon">
+        <div class="scroll-icon" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000">
             <span class="div1"></span>
             <div class="circle"></div>
         </div>
@@ -585,8 +589,11 @@
     </section>
 </footer>
 
-
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="/assest/js/jquery-3.6.0.min.js"></script>
 <script src="assest/js/script.js"></script>
-<script src="mixitup.min.js"></script>
+<script src="/assest/js/mixitup.min.js"></script>
+
+
 </body>
 </html>

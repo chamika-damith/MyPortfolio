@@ -18,6 +18,14 @@ body {
     scroll-behavior: smooth;
 }
 
+.mouseMove{
+    position: absolute;
+    width: 50px;
+    aspect-ratio: 1/1;
+    border: 1px solid #FD7E14;
+    border-radius: 100%;
+}
+
 /*navbar*/
 .header {
     position: fixed;
@@ -522,6 +530,7 @@ body {
 .assignment-card:hover{
     background: linear-gradient(0deg, rgb(101, 44, 152) 38%, rgba(63,63,63,1) 93%);
     backdrop-filter: blur(9px);
+    transition: 6s ease-in-out;
 }
 .assignment-card:hover .assignment-details{
      bottom: 17px;
@@ -634,11 +643,12 @@ body {
     flex-direction: column;
     margin-top: 10vh;
     margin-left: 7vw;
+    border-radius: 25px;
 }
 .contact-section{
     width: 880px;
     height: 350px;
-    margin-left:5vw;
+    margin-left:8vw;
     margin-top: 12vh;
     display: flex;
     justify-content: space-between;
@@ -703,7 +713,7 @@ body {
     margin-top: 50px;
     margin-left: 9vw;
     background-image: linear-gradient(to left, #8636ff, #2d5aff);
-    border-radius: 4px;
+    border-radius: 25px;
     color: white;
     font-weight: 400;
     border: 1px solid black;
@@ -717,6 +727,7 @@ body {
 
 /*footer section*/
 .footer-section{
+    margin-left: 30px;
     min-height: 40vh;
     position: relative;
 }
