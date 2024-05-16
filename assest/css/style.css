@@ -35,6 +35,7 @@ body {
     padding: 15px 10%;
     backdrop-filter: blur(7px);
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
     z-index: 100;
@@ -51,11 +52,15 @@ body {
 }
 .navbar a {
     display: inline-block;
-    font-size: 20px;
+    font-size: 13px;
     color: #bbbaba;
     text-decoration: none;
-    font-weight: 530;
-    margin-left: 27px;
+    font-weight: 430;
+}
+.navbar{
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
 }
 .span{
     background: -webkit-linear-gradient(right, #b02cff, #2bc4fa);
@@ -79,8 +84,9 @@ body {
     background-size: cover;
     background-position: center;
     display: flex;
+    flex-direction: row;
     align-items: center;
-    padding: 70px 10% 0;
+    padding: 70px 10%;
 }
 .home-content {
     max-width: 600px;
@@ -123,6 +129,7 @@ body {
     border-bottom-right-radius: 270px;
 }
 .btn-box {
+    position: absolute;
     display: inline-block;
     padding: 12px 28px;
     background: #424141;
