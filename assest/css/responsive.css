@@ -89,6 +89,106 @@
     .subtitle{
         margin-left: 130px;
     }
+    .cards {
+        width: 300px;
+        height: 400px;
+        margin-left: 5px;
+    }
+    .Assignment {
+        grid-template-columns: repeat(1, 250px);
+    }
+    .Assignment .scroll-icon {
+        margin-top: 1700px;
+    }
+    #Projects{
+        margin-top: 200px;
+    }
+    .project-menu{
+        margin-left: 5px;
+        width: 0;
+    }
+    .menu-item {
+        padding: 2px 8px;
+    }
+    .card__container {
+        grid-template-columns: repeat(1, 1fr);
+        margin:0;
+    }
+    .service {
+        grid-template-columns: repeat(1, 320px);
+    }
+    .service-items{
+        border-right: none;
+        border-bottom: 1px solid #6b6b6b;
+    }
+    #Contact {
+        margin-top: 200px;
+    }
+    .contact-subtitle {
+        font-size: 40px;
+    }
+    .contact-about {
+        font-size: 14px;
+    }
+    .contact-section {
+        width: 300px;
+        margin-left: 0;
+        flex-direction: column;
+    }
+    .contact-info {
+        width: 280px;
+        height: 300px;
+    }
+    .contact-title {
+        font-size: 13px;
+        margin-left: 80px;
+    }
+    .contact-details {
+         margin-left: 0;
+    }
+    .contact-details p {
+        font-size: 12px;
+        margin-left: 20px;
+    }
+    .contact-container {
+        height: 1000px;
+    }
+    .messageDetail {
+        width: 240px;
+        margin-left: 30px;
+        height: 200px;
+    }
+    .messageDetail input {
+        width: 200px;
+    }
+    .messageDetail textarea {
+        width: 200px;
+    }
+    .messageDetail h3 {
+        font-size: 15px;
+        margin-left: 50px;
+    }
+    .footer-section {
+        margin-left: 0;
+    }
+    .footer-title {
+        left: 90px;
+    }
+    .social-icon {
+        left: 0;
+        width: 300px;
+        padding-left: 30px;
+    }
+    .social-icon a {
+        margin-right: 40px;
+        font-size: 23px;
+    }
+    .footer-section h5 {
+        font-size: 6px;
+        left: 25px;
+        width: 270px;
+    }
+
 }
 @media screen and (min-width: 321px) and (max-width:376px){
     .header{
@@ -180,6 +280,104 @@
     }
     .subtitle{
         margin-left: 130px;
+    }
+    .cards {
+        width: 300px;
+        height: 400px;
+        margin-left: 5px;
+    }
+    .Assignment {
+        grid-template-columns: repeat(1, 250px);
+    }
+    .Assignment .scroll-icon {
+        margin-top: 1700px;
+    }
+    #Projects{
+        margin-top: 200px;
+    }
+    .project-menu{
+        margin-left: 8px;
+        width: 0;
+    }
+    .menu-item {
+        padding: 2px 8px;
+    }
+    .card__container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .service {
+        grid-template-columns: repeat(1, 320px);
+    }
+    .service-items{
+        border-right: none;
+        border-bottom: 1px solid #6b6b6b;
+    }
+    #Contact {
+        margin-top: 200px;
+    }
+    .contact-subtitle {
+        font-size: 40px;
+    }
+    .contact-about {
+        font-size: 14px;
+    }
+    .contact-section {
+        width: 300px;
+        margin-left: 0;
+        flex-direction: column;
+    }
+    .contact-info {
+        width: 280px;
+        height: 300px;
+    }
+    .contact-title {
+        font-size: 13px;
+        margin-left: 80px;
+    }
+    .contact-details {
+        margin-left: 0;
+    }
+    .contact-details p {
+        font-size: 12px;
+        margin-left: 20px;
+    }
+    .contact-container {
+        height: 1000px;
+    }
+    .messageDetail {
+        width: 240px;
+        margin-left: 30px;
+        height: 200px;
+    }
+    .messageDetail input {
+        width: 200px;
+    }
+    .messageDetail textarea {
+        width: 200px;
+    }
+    .messageDetail h3 {
+        font-size: 15px;
+        margin-left: 50px;
+    }
+    .footer-section {
+        margin-left: 0;
+    }
+    .footer-title {
+        left: 110px;
+    }
+    .social-icon {
+        left: 0;
+        width: 350px;
+        padding-left: 49px;
+    }
+    .social-icon a {
+        margin-right: 40px;
+        font-size: 23px;
+    }
+    .footer-section h5 {
+        font-size: 7px;
+        left: 40px;
+        width: 290px;
     }
 }
 @media screen and (min-width: 376px) and (max-width:429px){
@@ -273,6 +471,102 @@
     .subtitle{
         margin-left: 130px;
     }
+    .Assignment {
+        grid-template-columns: repeat(1, 250px);
+    }
+    .Assignment .scroll-icon {
+        margin-top: 1700px;
+    }
+    #Projects{
+        margin-top: 200px;
+    }
+    .project-menu{
+        margin-left: 8px;
+    }
+    .menu-item {
+        padding: 2px 8px;
+    }
+    .card__container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .card__container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .service {
+        grid-template-columns: repeat(1, 320px);
+    }
+    .service-items{
+        border-right: none;
+        border-bottom: 1px solid #6b6b6b;
+    }
+    #Contact {
+        margin-top: 200px;
+    }
+    .contact-subtitle {
+        font-size: 40px;
+    }
+    .contact-about {
+        font-size: 14px;
+    }
+    .contact-section {
+        width: 300px;
+        margin-left: 0;
+        flex-direction: column;
+    }
+    .contact-info {
+        width: 280px;
+        height: 300px;
+        margin-left: 40px;
+    }
+    .contact-title {
+        font-size: 13px;
+        margin-left: 80px;
+    }
+    .contact-details {
+        margin-left: 0;
+    }
+    .contact-details p {
+        font-size: 12px;
+        margin-left: 20px;
+    }
+    .contact-container {
+        height: 1000px;
+    }
+    .messageDetail {
+        width: 240px;
+        margin-left: 60px;
+        height: 200px;
+    }
+    .messageDetail input {
+        width: 200px;
+    }
+    .messageDetail textarea {
+        width: 200px;
+    }
+    .messageDetail h3 {
+        font-size: 15px;
+        margin-left: 50px;
+    }
+    .footer-section {
+        margin-left: 0;
+    }
+    .footer-title {
+        left: 130px;
+    }
+    .social-icon {
+        left: 0;
+        width: 400px;
+        padding-left: 90px;
+    }
+    .social-icon a {
+        margin-right: 40px;
+        font-size: 23px;
+    }
+    .footer-section h5 {
+        font-size: 8px;
+        left: 55px;
+        width: 350px;
+    }
 }
 @media screen and (min-width: 429px) and (max-width:769px){
     .header{
@@ -345,6 +639,120 @@
     }
     #Skills{
         margin-top: 200px
+    }
+    .Assignment {
+        grid-template-columns: repeat(2, 250px);
+    }
+    .Assignment .scroll-icon {
+        margin-top: 1000px;
+    }
+    #Projects{
+        margin-top: 200px;
+    }
+    .project-menu{
+        margin-left: 150px;
+    }
+    .menu-item {
+        padding: 2px 15px;
+    }
+    .card__container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .service {
+        grid-template-columns: repeat(1, 320px);
+    }
+    .service-items{
+        border-right: none;
+        border-bottom: 1px solid #6b6b6b;
+    }
+    #Contact {
+        margin-top: 200px;
+    }
+    .contact-subtitle {
+        font-size: 40px;
+    }
+    .contact-about {
+        font-size: 14px;
+    }
+    .contact-section {
+        width: 500px;
+        margin-left: 0;
+        flex-direction: column;
+    }
+    .contact-info {
+        width: 280px;
+        height: 300px;
+        margin-left: 210px;
+    }
+    .contact-title {
+        font-size: 13px;
+        margin-left: 80px;
+    }
+    .contact-details {
+        margin-left: 0;
+    }
+    .contact-details p {
+        font-size: 12px;
+        margin-left: 20px;
+    }
+    .contact-container {
+        height: 1000px;
+    }
+    .messageDetail {
+        width: 240px;
+        margin-left: 223px;
+        height: 450px;
+    }
+    .messageDetail input {
+        width: 200px;
+    }
+    .messageDetail textarea {
+        width: 200px;
+    }
+    .messageDetail h3 {
+        font-size: 15px;
+        margin-left: 50px;
+    }
+    .footer-section {
+        margin-left: 0;
+    }
+    .footer-title {
+        left: 130px;
+    }
+    .social-icon {
+        left: 0;
+        width: 400px;
+        padding-left: 90px;
+    }
+    .social-icon a {
+        margin-right: 40px;
+        font-size: 23px;
+    }
+    .footer-section h5 {
+        font-size: 8px;
+        left: 55px;
+        width: 350px;
+    }
+    .footer-section {
+        margin-left: 0;
+    }
+    .footer-title {
+        left: 320px;
+    }
+    .social-icon {
+        left: 0;
+        width: 400px;
+        padding-left: 90px;
+        margin-left: 180px;
+    }
+    .social-icon a {
+        margin-right: 40px;
+        font-size: 23px;
+    }
+    .footer-section h5 {
+        font-size: 8px;
+        left: 240px;
+        width: 350px;
     }
 }
 @media screen and (min-width: 769px) and (max-width:821px){
@@ -421,6 +829,103 @@
     #Skills{
         margin-top: 200px
     }
+    .Assignment {
+        grid-template-columns: repeat(2, 250px);
+    }
+    .Assignment .scroll-icon {
+        margin-top: 900px;
+    }
+    #Projects{
+        margin-top: 200px;
+    }
+    .project-menu{
+        margin-left: 170px;
+    }
+    .menu-item {
+        padding: 2px 15px;
+    }
+    .card__container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .service {
+        grid-template-columns: repeat(2, 320px);
+    }
+    .service-items:nth-child(1){
+        border-bottom: 1px solid #6b6b6b;
+    }
+    .service-items:nth-child(2){
+        border-right: none;
+        border-bottom: 1px solid #6b6b6b;
+    }
+    #Contact {
+        margin-top: 200px;
+    }
+    .contact-subtitle {
+        font-size: 40px;
+    }
+    .contact-about {
+        font-size: 14px;
+    }
+    .contact-section {
+        width: 500px;
+        margin-left: 0;
+        flex-direction: column;
+    }
+    .contact-info {
+        width: 280px;
+        height: 300px;
+        margin-left: 210px;
+    }
+    .contact-title {
+        font-size: 13px;
+        margin-left: 80px;
+    }
+    .contact-details {
+        margin-left: 0;
+    }
+    .contact-details p {
+        font-size: 12px;
+        margin-left: 20px;
+    }
+    .contact-container {
+        height: 1000px;
+    }
+    .messageDetail {
+        width: 240px;
+        margin-left: 223px;
+        height: 450px;
+    }
+    .messageDetail input {
+        width: 200px;
+    }
+    .messageDetail textarea {
+        width: 200px;
+    }
+    .messageDetail h3 {
+        font-size: 15px;
+        margin-left: 50px;
+    }
+    .footer-section {
+        margin-left: 0;
+    }
+    .footer-title {
+        left: 320px;
+    }
+    .social-icon {
+        left: 0;
+        width: 400px;
+        padding-left: 90px;
+        margin-left: 180px;
+    }
+    .social-icon a {
+        margin-right: 40px;
+        font-size: 23px;
+    }
+    .footer-section h5 {
+        font-size: 8px;
+        left: 230px;
+        width: 350px;
+    }
 }
 @media screen and (min-width: 821px) and (max-width:835px){
     .header{
@@ -496,6 +1001,103 @@
     #Skills{
         margin-top: 200px
     }
+    .Assignment {
+        grid-template-columns: repeat(2, 250px);
+    }
+    .Assignment .scroll-icon {
+        margin-top: 950px;
+    }
+    #Projects{
+        margin-top: 200px;
+    }
+    .project-menu{
+        margin-left: 180px;
+    }
+    .menu-item {
+        padding: 2px 15px;
+    }
+    .card__container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .service {
+        grid-template-columns: repeat(2, 320px);
+    }
+    .service-items:nth-child(1){
+        border-bottom: 1px solid #6b6b6b;
+    }
+    .service-items:nth-child(2){
+        border-right: none;
+        border-bottom: 1px solid #6b6b6b;
+    }
+    #Contact {
+        margin-top: 200px;
+    }
+    .contact-subtitle {
+        font-size: 40px;
+    }
+    .contact-about {
+        font-size: 14px;
+    }
+    .contact-section {
+        width: 500px;
+        margin-left: 0;
+        flex-direction: column;
+    }
+    .contact-info {
+        width: 280px;
+        height: 300px;
+        margin-left: 210px;
+    }
+    .contact-title {
+        font-size: 13px;
+        margin-left: 80px;
+    }
+    .contact-details {
+        margin-left: 0;
+    }
+    .contact-details p {
+        font-size: 12px;
+        margin-left: 20px;
+    }
+    .contact-container {
+        height: 1000px;
+    }
+    .messageDetail {
+        width: 240px;
+        margin-left: 223px;
+        height: 450px;
+    }
+    .messageDetail input {
+        width: 200px;
+    }
+    .messageDetail textarea {
+        width: 200px;
+    }
+    .messageDetail h3 {
+        font-size: 15px;
+        margin-left: 50px;
+    }
+    .footer-section {
+        margin-left: 0;
+    }
+    .footer-title {
+        left: 130px;
+    }
+    .social-icon {
+        left: 0;
+        width: 400px;
+        padding-left: 90px;
+    }
+    .social-icon a {
+        margin-right: 40px;
+        font-size: 23px;
+    }
+    .footer-section h5 {
+        font-size: 8px;
+        left: 55px;
+        width: 350px;
+    }
+
 }
 @media screen and (min-width: 835px) and (max-width:885px){
     .navbar{
@@ -568,6 +1170,105 @@
     #Skills{
         margin-top: 200px
     }
+    .Assignment {
+        grid-template-columns: repeat(3, 250px);
+    }
+    .Assignment .scroll-icon {
+        margin-top: 700px;
+    }
+    #Projects{
+        margin-top: 200px;
+    }
+    .project-menu{
+        margin-left: 180px;
+    }
+    .menu-item {
+        padding: 2px 15px;
+    }
+    .card__container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .service {
+        grid-template-columns: repeat(2, 320px);
+    }
+    .service-items:nth-child(1){
+        border-bottom: 1px solid #6b6b6b;
+    }
+    .service-items:nth-child(2){
+        border-right: none;
+        border-bottom: 1px solid #6b6b6b;
+    }
+    #Contact {
+        margin-top: 200px;
+    }
+    .contact-subtitle {
+        font-size: 40px;
+    }
+    .contact-about {
+        font-size: 14px;
+    }
+    .contact-section {
+        width: 500px;
+        margin-left: 0;
+        flex-direction: column;
+    }
+    .contact-info {
+        width: 280px;
+        height: 300px;
+        margin-left: 210px;
+    }
+    .contact-title {
+        font-size: 13px;
+        margin-left: 80px;
+    }
+    .contact-details {
+        margin-left: 0;
+    }
+    .contact-details p {
+        font-size: 12px;
+        margin-left: 20px;
+    }
+    .contact-container {
+        height: 1000px;
+    }
+    .messageDetail {
+        width: 240px;
+        margin-left: 223px;
+        height: 450px;
+    }
+    .messageDetail input {
+        width: 200px;
+    }
+    .messageDetail textarea {
+        width: 200px;
+    }
+    .messageDetail h3 {
+        font-size: 15px;
+        margin-left: 50px;
+    }
+    .footer-section {
+        margin-left: 0;
+    }
+    .footer-title {
+        left: 340px;
+    }
+    .social-icon {
+        left: 0;
+        width: 400px;
+        padding-left: 90px;
+        margin-left: 200px;
+    }
+    .social-icon a {
+        margin-right: 40px;
+        font-size: 23px;
+    }
+    .footer-section h5 {
+        font-size: 8px;
+        left: 55px;
+        width: 350px;
+        margin-left: 200px;
+    }
+
 }
 @media screen and (min-width: 885px) and (max-width:950px){
     .header{
@@ -643,6 +1344,102 @@
     }
     #Skills{
         margin-top: 200px
+    }
+    .Assignment {
+        grid-template-columns: repeat(3, 250px);
+    }
+    .Assignment .scroll-icon {
+        margin-top: 700px;
+    }
+    #Projects{
+        margin-top: 200px;
+    }
+    .project-menu{
+        margin-left: 200px;
+    }
+    .menu-item {
+        padding: 2px 15px;
+    }
+    .card__container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .service {
+        grid-template-columns: repeat(2, 320px);
+    }
+    .service-items:nth-child(1){
+        border-bottom: 1px solid #6b6b6b;
+    }
+    .service-items:nth-child(2){
+        border-right: none;
+        border-bottom: 1px solid #6b6b6b;
+    }
+    #Contact {
+        margin-top: 200px;
+    }
+    .contact-subtitle {
+        font-size: 40px;
+    }
+    .contact-about {
+        font-size: 14px;
+    }
+    .contact-section {
+        width: 500px;
+        margin-left: 0;
+        flex-direction: column;
+    }
+    .contact-info {
+        width: 280px;
+        height: 300px;
+        margin-left: 210px;
+    }
+    .contact-title {
+        font-size: 13px;
+        margin-left: 80px;
+    }
+    .contact-details {
+        margin-left: 0;
+    }
+    .contact-details p {
+        font-size: 12px;
+        margin-left: 20px;
+    }
+    .contact-container {
+        height: 1000px;
+    }
+    .messageDetail {
+        width: 240px;
+        margin-left: 223px;
+        height: 450px;
+    }
+    .messageDetail input {
+        width: 200px;
+    }
+    .messageDetail textarea {
+        width: 200px;
+    }
+    .messageDetail h3 {
+        font-size: 15px;
+        margin-left: 50px;
+    }
+    .footer-section {
+        margin-left: 0;
+    }
+    .footer-title {
+        left: 130px;
+    }
+    .social-icon {
+        left: 0;
+        width: 400px;
+        padding-left: 90px;
+    }
+    .social-icon a {
+        margin-right: 40px;
+        font-size: 23px;
+    }
+    .footer-section h5 {
+        font-size: 8px;
+        left: 55px;
+        width: 350px;
     }
 }
 @media screen and (min-width: 950px) and (max-width:1024px){
@@ -721,6 +1518,105 @@
     #Skills{
         margin-top: 200px
     }
+    .Assignment {
+        grid-template-columns: repeat(3, 250px);
+    }
+    .Assignment .scroll-icon {
+        margin-top: 700px;
+    }
+    #Projects{
+        margin-top: 200px;
+    }
+    .project-menu{
+        margin-left: 280px;
+    }
+    .menu-item {
+        padding: 2px 15px;
+    }
+    .card__container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .service {
+        grid-template-columns: repeat(2, 320px);
+    }
+    .service-items:nth-child(1){
+        border-bottom: 1px solid #6b6b6b;
+    }
+    .service-items:nth-child(2){
+        border-right: none;
+        border-bottom: 1px solid #6b6b6b;
+    }
+    #Contact {
+        margin-top: 200px;
+    }
+    .contact-subtitle {
+        font-size: 40px;
+    }
+    .contact-about {
+        font-size: 14px;
+    }
+    .contact-section {
+        width: 800px;
+        margin-left: 0;
+        flex-direction: column;
+    }
+    .contact-info {
+        width: 280px;
+        height: 300px;
+        margin-left: 320px;
+    }
+    .contact-title {
+        font-size: 13px;
+        margin-left: 80px;
+    }
+    .contact-details {
+        margin-left: 0;
+    }
+    .contact-details p {
+        font-size: 12px;
+        margin-left: 20px;
+    }
+    .contact-container {
+        height: 1000px;
+    }
+    .messageDetail {
+        width: 240px;
+        margin-left: 360px;
+        height: 450px;
+    }
+    .messageDetail input {
+        width: 200px;
+    }
+    .messageDetail textarea {
+        width: 200px;
+    }
+    .messageDetail h3 {
+        font-size: 15px;
+        margin-left: 50px;
+    }
+    .footer-section {
+        margin-left: 0;
+    }
+    .footer-title {
+        left: 430px;
+    }
+    .social-icon {
+        left: 0;
+        width: 400px;
+        padding-left: 90px;
+        margin-left: 300px;
+    }
+    .social-icon a {
+        margin-right: 40px;
+        font-size: 23px;
+    }
+    .footer-section h5 {
+        font-size: 8px;
+        left: 55px;
+        width: 350px;
+        margin-left: 300px;
+    }
+
 }
 @media screen and (min-width: 1025px) and (max-width:1281px){
     .header{
@@ -798,6 +1694,76 @@
     #Skills{
         margin-top: 200px
     }
+    .Assignment {
+        grid-template-columns: repeat(3, 250px);
+    }
+    .Assignment .scroll-icon {
+        margin-top: 700px;
+    }
+    #Projects{
+        margin-top: 200px;
+    }
+    .card__container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .service {
+        grid-template-columns: repeat(2, 320px);
+    }
+    .service-items:nth-child(1){
+        border-bottom: 1px solid #6b6b6b;
+    }
+    .service-items:nth-child(2){
+        border-right: none;
+        border-bottom: 1px solid #6b6b6b;
+    }
+    #Contact {
+        margin-top: 200px;
+    }
+    .contact-subtitle {
+        font-size: 40px;
+    }
+    .contact-about {
+        font-size: 14px;
+    }
+    .contact-section {
+        width: 1000px;
+        margin-left: 0;
+        flex-direction: column;
+    }
+    .contact-info {
+        width: 280px;
+        height: 300px;
+        margin-left: 400px;
+    }
+    .contact-title {
+        font-size: 20px;
+        margin-left: 80px;
+    }
+    .contact-details {
+        margin-left: 0;
+    }
+    .contact-details p {
+        font-size: 12px;
+        margin-left: 20px;
+    }
+    .contact-container {
+        height: 1000px;
+    }
+    .messageDetail {
+        width: 240px;
+        margin-left: 410px;
+        height: 450px;
+    }
+    .messageDetail input {
+        width: 200px;
+    }
+    .messageDetail textarea {
+        width: 200px;
+    }
+    .messageDetail h3 {
+        font-size: 20px;
+        margin-left: 50px;
+    }
 }
 @media screen and (min-width: 1281px) and (max-width:1440px){
     .header{
@@ -810,6 +1776,9 @@
     .navbar a {
         font-size: 20px;
         font-weight: 420;
+    }
+    .Assignment .scroll-icon {
+        margin-top: 500px;
     }
 }
 @media screen and (min-width: 1440px) and (max-width:1920px){
