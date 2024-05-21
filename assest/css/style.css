@@ -13,6 +13,7 @@
     font-family: Josefin Sans, sans-serif;
 }
 body {
+    overflow-x: hidden;
     color: white;
     background: linear-gradient(to bottom, rgb(16, 16, 16) 0%, rgb(0, 9, 14) 85% , rgb(0, 10, 14) 100%);
     scroll-behavior: smooth;
@@ -348,7 +349,7 @@ body {
 
 /*projects*/
 #Projects{
-    min-height: 97vh;
+    min-height: 1047.6000px;
     margin-top: 70px;
 }
 .container {
@@ -419,6 +420,10 @@ body {
     transition: filter 0.3s ease-in-out;
 }
 
+.card__data a:hover {
+    color: #FD7E14;
+    transition: 300ms ease-in-out;
+}
 
 .card__article:hover {
     animation: remove-overflow 2s forwards;
@@ -535,26 +540,32 @@ body {
     font-size: 21px;
 }
 .assignment-card:hover{
+    transition: 6s ease-in-out;
     background: linear-gradient(0deg, rgb(101, 44, 152) 38%, rgba(63,63,63,1) 93%);
     backdrop-filter: blur(9px);
-    transition: 6s ease-in-out;
+
 }
 .assignment-card:hover .assignment-details{
      bottom: 17px;
+     transition: 150ms ease-in-out;
 }
 .assignment-card:hover .assignment-title {
     transform: translateY(-20px);
+    transition: 180ms ease-in-out;
 }
 .Assignment .scroll-icon{
     margin-top: 90vh;
     margin-left: 49vw;
+}
+.assignment-details a:hover{
+    color: #FD7E14;
 }
 
 
 
 /*service*/
 #service-section{
-    min-height: 85vh;
+    min-height: 615.6000px;
     margin-top: 60px;
 }
 .service{
@@ -779,5 +790,5 @@ body {
 }
 .social-icon a:hover{
     color: #0b70f3;
-    transition: 0.3s ease-in-out;
+    transition: 300ms ease-in-out;
 }

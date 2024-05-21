@@ -1,3 +1,4 @@
+
 @media screen and  (max-width:320px){
     .header{
         width: 320px;
@@ -144,7 +145,7 @@
         margin-left: 80px;
     }
     .contact-details {
-         margin-left: 0;
+        margin-left: 0;
     }
     .contact-details p {
         font-size: 12px;
