@@ -115,6 +115,12 @@
         grid-template-columns: repeat(1, 1fr);
         margin:0;
     }
+    .card__img{
+        width: 250px;
+    }
+    .card__data {
+        width: 240px;
+    }
     .service {
         grid-template-columns: repeat(1, 320px);
     }
@@ -132,7 +138,7 @@
         font-size: 14px;
     }
     .contact-section {
-        width: 300px;
+        width: 200px;
         margin-left: 0;
         flex-direction: column;
     }
