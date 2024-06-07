@@ -1,0 +1,58 @@
+body{
+    background-color: black;
+}
+main {
+    width: fit-content;
+    height: fit-content;
+    position: absolute;
+
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+    color: red;
+}
+
+#light-panel {
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+    margin: auto;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#btn-panel {
+    text-align: center;
+    margin: 20px 0px;
+}
+
+.light {
+    width: 100px;
+    aspect-ratio: 2/1;
+    background-color: white;
+    margin-left: 10px;
+    border-radius: 3px;
+}
+
+
+.light_on {
+    background: red;
+    box-shadow: 0px 0px 20px red;
+}
+.light_on2 {
+    background: hotpink;
+    box-shadow: 0px 0px 20px hotpink;
+}
+
+#start{
+    padding: 3px 13px ;
+
+}
+#stop{
+    padding: 3px 13px ;
+}

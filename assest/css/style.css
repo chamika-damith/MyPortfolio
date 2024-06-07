@@ -685,8 +685,11 @@ body {
 }
 .assignment-details a{
     color: white;
-    padding-left: 17px;
-    font-size: 20px;
+    font-size: 21px;
+    text-decoration: none;
+}
+.assignment-details a i:nth-child(1){
+    margin-right:20px
 }
 .assignment-card span{
     position: absolute;
@@ -700,7 +703,7 @@ body {
 
 }
 .assignment-card:hover .assignment-details{
-     bottom: 17px;
+     bottom: 19px;
      transition: 150ms ease-in-out;
 }
 .assignment-card:hover .assignment-title {
@@ -711,7 +714,7 @@ body {
     margin-top: 90vh;
     margin-left: 49vw;
 }
-.assignment-details a:hover{
+.assignment-details a i:hover{
     color: #FD7E14;
 }
 
