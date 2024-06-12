@@ -293,12 +293,6 @@
         height: 400px;
         margin-left: 5px;
     }
-    .Assignment {
-        grid-template-columns: repeat(1, 250px);
-    }
-    .Assignment .scroll-icon {
-        margin-top: 1700px;
-    }
     #Projects{
         margin-top: 200px;
     }
@@ -478,12 +472,7 @@
     .subtitle{
         margin-left: 130px;
     }
-    .Assignment {
-        grid-template-columns: repeat(1, 250px);
-    }
-    .Assignment .scroll-icon {
-        margin-top: 1700px;
-    }
+
     #Projects{
         margin-top: 200px;
     }
@@ -647,12 +636,7 @@
     #Skills{
         margin-top: 200px
     }
-    .Assignment {
-        grid-template-columns: repeat(2, 250px);
-    }
-    .Assignment .scroll-icon {
-        margin-top: 1000px;
-    }
+
     #Projects{
         margin-top: 200px;
     }
@@ -836,12 +820,7 @@
     #Skills{
         margin-top: 200px
     }
-    .Assignment {
-        grid-template-columns: repeat(2, 250px);
-    }
-    .Assignment .scroll-icon {
-        margin-top: 900px;
-    }
+
     #Projects{
         margin-top: 200px;
     }
@@ -1008,12 +987,7 @@
     #Skills{
         margin-top: 200px
     }
-    .Assignment {
-        grid-template-columns: repeat(2, 250px);
-    }
-    .Assignment .scroll-icon {
-        margin-top: 950px;
-    }
+
     #Projects{
         margin-top: 200px;
     }

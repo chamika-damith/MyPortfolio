@@ -13,6 +13,7 @@ $(document).on("mousemove", function(e) {
 });
 
 
+
 // window.onscroll = function() {
 //     var sections = document.querySelectorAll('section');
 //     sections.forEach(function(section) {
