@@ -8,13 +8,24 @@ import orderModel from "../model/orderModel.js";
 
 let selectedCustomerId;
 let selectedItemId;
-
 let itemName;
 let itemPrice;
 let itemQty;
 let orderQty;
 
 var allTotal=0;
+
+$('#orderId').val(generateOrderId());
+
+function loadCart() {
+
+    $(".tbody> tr").detach();
+
+    for (var tc of order){
+        var row="<tr><td>"+tc.itemcode+"</td><td>"+tc.itemname+"</td><td>"+tc.itemprice+"</td><td>"+tc.qty+"</td><td>"+tc.total+"</td></tr>";
+        $('#orderCart').append(row);
+    }
+}
 
 $("#btnPurchase").on('click', () => {
 
@@ -35,6 +46,22 @@ $("#btnPurchase").on('click', () => {
         );
 
         orderDetails.push(orderDetailObj);
+
+        $('#orderId').val(generateOrderId());
+        $('#orderDate').val('');
+        $('#cusIdOption').val('');
+        $('#itemIdOption').val('');
+        $('#orderQty').val('');
+        $('#total').val('');
+        $('#txtCash').val('');
+        $('#txtDiscount').val('');
+
+
+        order.splice(0, order.length);
+        loadCart();
+
+        startProgress();
+        $(".tbody").clear();
     }
 
     console.log(customer);
@@ -101,22 +128,19 @@ function calTotal(itemPrice, orderQty) {
 
 $("#btn_addItem").on('click', () => {
     orderQty = $('#orderQty').val();
+    var itemPrice=$('#orderFormPrice').val();
     var CalTotal=calTotal(itemPrice,orderQty);
+    var itemCode=$('#itemIdOption').val();
+    var itemName=$('#orderFormItemName').val();
+
 
     allTotal+=CalTotal;
 
-    let record = `
-            <tr>
-                <td>${selectedItemId}</td>
-                <td>${itemName}</td> 
-                <td>${itemPrice}</td>
-                <td>${orderQty}</td> 
-                <td>${CalTotal}</td> 
-            </tr>`;
-    $("#orderCart").append(record);
-
-    let orderObj = new orderModel(CalTotal);
+    let orderObj = new orderModel(itemCode,itemName,itemPrice,orderQty,CalTotal);
     order.push(orderObj);
+
+
+    loadCart();
 
     calTotalAllItem();
     updateQty();
@@ -184,15 +208,67 @@ $('#txtCash').on('keyup',() => {
 
 });
 
-// $('#txtDiscount').on('keyup', () => {
-//     let subTotal = parseFloat($('#subTotal').val());
-//     let discount = parseFloat($('#txtDiscount').val());
-//     let disTotal = 0;
-//     let subDis = 0;
-//
-//
-//     disTotal = subTotal* (discount / 100);
-//     subDis = subTotal - disTotal;
-//
-//     $('#subTotal').val(subDis);
-// });
+function generateOrderId() {
+    let lastId = 'O00-001';
+
+    if (order.length > 0) {
+        let lastElement = order[order.length - 1];
+
+        if (lastElement && lastElement.orderId) {
+            let lastIdParts = lastElement.orderId.split('-');
+            let lastNumber = parseInt(lastIdParts[1]);
+
+            lastId = `O00-${String(lastNumber + 1).padStart(3, '0')}`;
+        }
+    }
+
+    return lastId;
+}
+
+
+$('#txtDiscount').on('input', () => {
+    calculatePaymentDetails();
+});
+
+function calculatePaymentDetails() {
+    const totalElement = document.getElementById('total');
+    const subTotalElement = document.getElementById('subTotal');
+    const cashElement = document.getElementById('txtCash');
+    const discountElement = document.getElementById('txtDiscount');
+    const balanceElement = document.getElementById('txtBalance');
+    const cashErrorElement = document.getElementById('cashError');
+
+    let total = parseFloat(totalElement.value) || 0;
+    let cash = parseFloat(cashElement.value) || 0;
+    let discountPercent = parseFloat(discountElement.value) || 0;
+
+    let discount = (total * discountPercent) / 100;
+    let subTotal = total - discount;
+    subTotalElement.value = subTotal.toFixed(2);
+
+    let balance = cash - subTotal;
+    balanceElement.value = balance.toFixed(2);
+
+    if (balance < 0) {
+        cashErrorElement.style.display = 'block';
+    } else {
+        cashErrorElement.style.display = 'none';
+    }
+}
+
+function startProgress() {
+    var progressBar = document.getElementById('progressBarOrder');
+    var width = 0;
+    var interval = setInterval(function() {
+        if (width >= 100) {
+            clearInterval(interval);
+            setTimeout(function() {
+                // After 15 seconds, reset the progress bar if needed
+                progressBar.style.width = '0%';
+            }, 1500);
+        } else {
+            width++;
+            progressBar.style.width = width + '%';
+        }
+    }, 5);
+}

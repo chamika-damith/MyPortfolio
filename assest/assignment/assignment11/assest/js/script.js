@@ -1,4 +1,3 @@
-
 /*---------spa-----------*/
 $('.order-section').hide();
 $('#item-section').hide();
@@ -11,21 +10,21 @@ $('#home-btn').on('click', () =>{
     $('#customer-section').hide();
 });
 
-$('#order-btn').on('click', () =>{
+$('.order-btn').on('click', () =>{
     $('#homediv').hide();
     $('#item-section').hide();
     $('#customer-section').hide();
     $('.order-section').show();
 });
 
-$('#item-btn').on('click', () =>{
+$('.item-btn').on('click', () =>{
     $('#homediv').hide();
     $('.order-section').hide();
     $('#customer-section').hide();
     $('#item-section').show();
 });
 
-$('#customer-btn').on('click', () =>{
+$('.customer-btn').on('click', () =>{
     $('#homediv').hide();
     $('.order-section').hide();
     $('#item-section').hide();
@@ -154,4 +153,5 @@ function checkFieldItemQty() {
         $('#Iquentity').css('border', '2px solid green');
     }
 }
+
 
